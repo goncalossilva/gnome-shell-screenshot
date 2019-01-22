@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-23 23:47+0100\n"
+"POT-Creation-Date: 2019-11-04 01:16+0000\n"
 "PO-Revision-Date: 2017-04-26 14:29+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -78,7 +78,7 @@ msgstr ""
 msgid "Clear"
 msgstr ""
 
-#: src/indicator.js:122 src/notifications.js:95
+#: src/indicator.js:122 src/notifications.js:109
 msgid "Copy"
 msgstr "Kopírovat"
 
@@ -90,73 +90,99 @@ msgstr ""
 msgid "Imgur"
 msgstr ""
 
-#: src/indicator.js:140
+#: src/indicator.js:140 src/indicator.js:162
 msgid "Upload"
 msgstr ""
 
-#: src/indicator.js:141
+#: src/indicator.js:141 src/indicator.js:163
+#, fuzzy
 msgid "Open Link"
-msgstr ""
+msgstr "Kopírovat"
 
-#: src/indicator.js:142 src/notifications.js:182
+#: src/indicator.js:142 src/indicator.js:164 src/notifications.js:225
+#: src/notifications.js:286
 #, fuzzy
 msgid "Copy Link"
 msgstr "Kopírovat"
 
-#: src/indicator.js:143
+#: src/indicator.js:143 src/indicator.js:165
 msgid "Delete"
 msgstr ""
 
-#: src/indicator.js:297 src/prefs.js:144
+#: src/indicator.js:161
+msgid "CloudApp"
+msgstr ""
+
+#: src/indicator.js:357 src/prefs.js:148
 msgid "Select Area"
 msgstr "Vyber oblast"
 
-#: src/indicator.js:298 src/prefs.js:145
+#: src/indicator.js:358 src/prefs.js:149
 msgid "Select Window"
 msgstr "Vyber okno"
 
-#: src/indicator.js:299 src/prefs.js:146
+#: src/indicator.js:359 src/prefs.js:150
 msgid "Select Desktop"
 msgstr "Vyber pracovní plochu"
 
-#: src/indicator.js:327
+#: src/indicator.js:387
 msgid "Settings"
 msgstr "Nastavení"
 
-#: src/notifications.js:65
+#: src/notifications.js:67
 msgid "New Screenshot"
 msgstr "Nová fotka z obrazovky"
 
-#: src/notifications.js:70
+#: src/notifications.js:72
 msgid "Size:"
 msgstr "Velikost:"
 
-#: src/notifications.js:96
+#: src/notifications.js:110
 msgid "Save"
 msgstr "Uložit"
 
-#: src/notifications.js:100
+#: src/notifications.js:114
 msgid "Uploading To Imgur..."
 msgstr ""
 
-#: src/notifications.js:102
+#: src/notifications.js:116
 msgid "Upload To Imgur"
 msgstr ""
 
-#: src/notifications.js:132
+#: src/notifications.js:122
+msgid "Uploading To CloudApp..."
+msgstr ""
+
+#: src/notifications.js:124
+msgid "Upload To CloudApp"
+msgstr ""
+
+#: src/notifications.js:158
 msgid "Error"
 msgstr "Chyba"
 
-#: src/notifications.js:144 src/notifications.js:156
+#: src/notifications.js:178 src/notifications.js:183 src/notifications.js:199
 msgid "Imgur Upload"
 msgstr ""
 
-#: src/notifications.js:162
+#: src/notifications.js:205
 msgid "Imgur Upload Failed"
 msgstr ""
 
-#: src/notifications.js:167
+#: src/notifications.js:210
 msgid "Imgur Upload Successful"
+msgstr ""
+
+#: src/notifications.js:248 src/notifications.js:260
+msgid "CloudApp Upload"
+msgstr ""
+
+#: src/notifications.js:266
+msgid "CloudApp Upload Failed"
+msgstr ""
+
+#: src/notifications.js:271
+msgid "CloudApp Upload Successful"
 msgstr ""
 
 #: src/prefs.js:86
@@ -172,28 +198,28 @@ msgid "Imgur Upload (Beta)"
 msgstr ""
 
 #: src/prefs.js:98
+msgid "CloudApp Upload (Alpha)"
+msgstr ""
+
+#: src/prefs.js:102
 msgid "Keybindings"
 msgstr "Klávesové zkratky"
 
-#: src/prefs.js:117
+#: src/prefs.js:121
 msgid "Show Indicator"
 msgstr "Zobrazit indikátor"
 
-#: src/prefs.js:126
+#: src/prefs.js:130
 msgid "Show Notification After Capture"
 msgstr ""
 
-#: src/prefs.js:138
+#: src/prefs.js:142
 msgid "Primary Button"
 msgstr "Primární tlačítko"
 
-#: src/prefs.js:147
+#: src/prefs.js:151
 msgid "Show Menu"
 msgstr "Zobrazit nabídku"
-
-#: src/prefs.js:168
-msgid "Auto-Copy to Clipboard"
-msgstr ""
 
 #: src/prefs.js:174
 msgid "Nothing"
@@ -203,63 +229,104 @@ msgstr ""
 msgid "Image Data"
 msgstr "Data rastrového obrazu"
 
+#: src/prefs.js:176
+msgid "Local Path"
+msgstr ""
+
+#: src/prefs.js:204
+#, fuzzy
+msgid "Copy Button"
+msgstr "Primární tlačítko"
+
 #: src/prefs.js:211
+msgid "Auto-Copy to Clipboard"
+msgstr ""
+
+#: src/prefs.js:233
 msgid "Auto-Save Screenshot"
 msgstr "Automatické ukládání"
 
-#: src/prefs.js:222
+#: src/prefs.js:244
 msgid "Save Location"
 msgstr "Složka pro ukládání"
 
-#: src/prefs.js:229
+#: src/prefs.js:251
 msgid "Select"
 msgstr "Vyber"
 
-#: src/prefs.js:270
+#: src/prefs.js:292
 msgid "Default Filename"
 msgstr "Výchozí jméno souboru"
 
-#: src/prefs.js:295
+#: src/prefs.js:317
 msgid "Preview"
 msgstr "Náhled"
 
-#: src/prefs.js:353
+#: src/prefs.js:375
 msgid "Enable Imgur Upload"
 msgstr ""
 
-#: src/prefs.js:361
+#: src/prefs.js:383 src/prefs.js:566
 msgid "Show Upload Notification"
 msgstr ""
 
-#: src/prefs.js:378
+#: src/prefs.js:400 src/prefs.js:581
 msgid "Auto-Upload After Capture"
 msgstr ""
 
-#: src/prefs.js:393
+#: src/prefs.js:415 src/prefs.js:596
 msgid "Auto-Copy Link After Upload"
 msgstr ""
 
-#: src/prefs.js:408
+#: src/prefs.js:430 src/prefs.js:611
 msgid "Auto-Open Link After Upload"
 msgstr ""
 
-#: src/prefs.js:434
+#: src/prefs.js:456
+msgid "Enable CloudApp Upload"
+msgstr ""
+
+#: src/prefs.js:466
+msgid "Email"
+msgstr ""
+
+#: src/prefs.js:499
+msgid "Password"
+msgstr ""
+
+#: src/prefs.js:533
+msgid "Link"
+msgstr ""
+
+#: src/prefs.js:539
+msgid "Share Link"
+msgstr ""
+
+#: src/prefs.js:540
+msgid "Direct Link"
+msgstr ""
+
+#: src/prefs.js:541
+msgid "Download Link"
+msgstr ""
+
+#: src/prefs.js:637
 msgid "Select area"
 msgstr "Vyber oblast"
 
-#: src/prefs.js:435
+#: src/prefs.js:638
 msgid "Select window"
 msgstr "Vyber okno"
 
-#: src/prefs.js:436
+#: src/prefs.js:639
 msgid "Select whole desktop"
 msgstr "Vyber celou obrazovku"
 
-#: src/prefs.js:463
+#: src/prefs.js:666
 msgid "Keyboard Shortcut"
 msgstr "Klávesová zkratka"
 
-#: src/prefs.js:503
+#: src/prefs.js:706
 msgid "Modify"
 msgstr "Upravit"
 
@@ -271,7 +338,7 @@ msgstr "_Zrušit"
 msgid "_Save"
 msgstr "_Uložit"
 
-#: src/selection.js:228
+#: src/selection.js:229
 msgid "selected region was too small - please select a larger area"
 msgstr "vybraná oblast je příliš malá - vyber větší"
 

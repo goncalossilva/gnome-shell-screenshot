@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: 2020-05-02 21:13+0200\n"
+"Last-Translator: Joan Coll Cerdán <johan.az@gmail.com>\n"
 "Language-Team: \n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: \n"
 "X-Generator: Poedit 2.3\n"
-"Last-Translator: Joan Coll Cerdán <johan.az@gmail.com>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: ca\n"
 
 #: src/filename.js:27
 msgid "Screenshot"
@@ -78,7 +78,7 @@ msgstr "Retard de captura"
 msgid "Clear"
 msgstr "Neteja-ho"
 
-#: src/indicator.js:122 src/notifications.js:95
+#: src/indicator.js:122 src/notifications.js:109
 msgid "Copy"
 msgstr "Copia"
 
@@ -90,72 +90,101 @@ msgstr "Anomena i desa..."
 msgid "Imgur"
 msgstr "Imgur"
 
-#: src/indicator.js:140
+#: src/indicator.js:140 src/indicator.js:162
 msgid "Upload"
 msgstr "Carrega"
 
-#: src/indicator.js:141
+#: src/indicator.js:141 src/indicator.js:163
 msgid "Open Link"
 msgstr "Obrir enllaç"
 
-#: src/indicator.js:142 src/notifications.js:182
+#: src/indicator.js:142 src/indicator.js:164 src/notifications.js:225
+#: src/notifications.js:286
 msgid "Copy Link"
 msgstr "Copiar enllaç"
 
-#: src/indicator.js:143
+#: src/indicator.js:143 src/indicator.js:165
 msgid "Delete"
 msgstr "Esborrar"
 
-#: src/indicator.js:297 src/prefs.js:144
+#: src/indicator.js:161
+msgid "CloudApp"
+msgstr ""
+
+#: src/indicator.js:357 src/prefs.js:148
 msgid "Select Area"
 msgstr "Seleccionar àrea"
 
-#: src/indicator.js:298 src/prefs.js:145
+#: src/indicator.js:358 src/prefs.js:149
 msgid "Select Window"
 msgstr "Seleccionar finestra"
 
-#: src/indicator.js:299 src/prefs.js:146
+#: src/indicator.js:359 src/prefs.js:150
 msgid "Select Desktop"
 msgstr "Seleccionar escriptori"
 
-#: src/indicator.js:327
+#: src/indicator.js:387
 msgid "Settings"
 msgstr "Paràmetres"
 
-#: src/notifications.js:65
+#: src/notifications.js:67
 msgid "New Screenshot"
 msgstr "Nova captura de pantalla"
 
-#: src/notifications.js:70
+#: src/notifications.js:72
 msgid "Size:"
 msgstr "Mida:"
 
-#: src/notifications.js:96
+#: src/notifications.js:110
 msgid "Save"
 msgstr "Desa"
 
-#: src/notifications.js:100
+#: src/notifications.js:114
 msgid "Uploading To Imgur..."
 msgstr "Carregant a Imgur..."
 
-#: src/notifications.js:102
+#: src/notifications.js:116
 msgid "Upload To Imgur"
 msgstr "Carregar-ho a Imgur"
 
-#: src/notifications.js:132
+#: src/notifications.js:122
+#, fuzzy
+msgid "Uploading To CloudApp..."
+msgstr "Carregant a Imgur..."
+
+#: src/notifications.js:124
+#, fuzzy
+msgid "Upload To CloudApp"
+msgstr "Carregar-ho a Imgur"
+
+#: src/notifications.js:158
 msgid "Error"
 msgstr "Error"
 
-#: src/notifications.js:144 src/notifications.js:156
+#: src/notifications.js:178 src/notifications.js:183 src/notifications.js:199
 msgid "Imgur Upload"
 msgstr "Carrega a Imgur"
 
-#: src/notifications.js:162
+#: src/notifications.js:205
 msgid "Imgur Upload Failed"
 msgstr "Carrega a Imgur fallida"
 
-#: src/notifications.js:167
+#: src/notifications.js:210
 msgid "Imgur Upload Successful"
+msgstr "Carrega a Imgur confirmada"
+
+#: src/notifications.js:248 src/notifications.js:260
+msgid "CloudApp Upload"
+msgstr ""
+
+#: src/notifications.js:266
+#, fuzzy
+msgid "CloudApp Upload Failed"
+msgstr "Carrega a Imgur fallida"
+
+#: src/notifications.js:271
+#, fuzzy
+msgid "CloudApp Upload Successful"
 msgstr "Carrega a Imgur confirmada"
 
 #: src/prefs.js:86
@@ -171,28 +200,28 @@ msgid "Imgur Upload (Beta)"
 msgstr "Carrega a Imgur (Beta)"
 
 #: src/prefs.js:98
+msgid "CloudApp Upload (Alpha)"
+msgstr ""
+
+#: src/prefs.js:102
 msgid "Keybindings"
 msgstr "Dreceres"
 
-#: src/prefs.js:117
+#: src/prefs.js:121
 msgid "Show Indicator"
 msgstr "Mostrar indicador"
 
-#: src/prefs.js:126
+#: src/prefs.js:130
 msgid "Show Notification After Capture"
 msgstr "Mostrar notificació després de la captura"
 
-#: src/prefs.js:138
+#: src/prefs.js:142
 msgid "Primary Button"
 msgstr "Botó primari"
 
-#: src/prefs.js:147
+#: src/prefs.js:151
 msgid "Show Menu"
 msgstr "Mostrar menú"
-
-#: src/prefs.js:168
-msgid "Auto-Copy to Clipboard"
-msgstr "Copiar automàticament al portapapers"
 
 #: src/prefs.js:174
 msgid "Nothing"
@@ -202,63 +231,108 @@ msgstr "No fer res"
 msgid "Image Data"
 msgstr "Dades de la imatge"
 
+#: src/prefs.js:176
+msgid "Local Path"
+msgstr ""
+
+#: src/prefs.js:204
+#, fuzzy
+msgid "Copy Button"
+msgstr "Botó primari"
+
 #: src/prefs.js:211
+msgid "Auto-Copy to Clipboard"
+msgstr "Copiar automàticament al portapapers"
+
+#: src/prefs.js:233
 msgid "Auto-Save Screenshot"
 msgstr "Desar captura de pantalla automàticament"
 
-#: src/prefs.js:222
+#: src/prefs.js:244
 msgid "Save Location"
 msgstr "Ubicació d'emmagatzematge"
 
-#: src/prefs.js:229
+#: src/prefs.js:251
 msgid "Select"
 msgstr "Seleccionar"
 
-#: src/prefs.js:270
+#: src/prefs.js:292
 msgid "Default Filename"
 msgstr "Nom de fitxer predeterminat"
 
-#: src/prefs.js:295
+#: src/prefs.js:317
 msgid "Preview"
 msgstr "Previsualització"
 
-#: src/prefs.js:353
+#: src/prefs.js:375
 msgid "Enable Imgur Upload"
 msgstr "Activar càrrega a Imgur"
 
-#: src/prefs.js:361
+#: src/prefs.js:383 src/prefs.js:566
 msgid "Show Upload Notification"
 msgstr "Mostrar notificació de la càrrega"
 
-#: src/prefs.js:378
+#: src/prefs.js:400 src/prefs.js:581
 msgid "Auto-Upload After Capture"
 msgstr "Carregar automàticament després de la captura"
 
-#: src/prefs.js:393
+#: src/prefs.js:415 src/prefs.js:596
 msgid "Auto-Copy Link After Upload"
 msgstr "Copiar enllaç automàticament després de la càrrega"
 
-#: src/prefs.js:408
+#: src/prefs.js:430 src/prefs.js:611
 msgid "Auto-Open Link After Upload"
 msgstr "Obrir enllaç automàticament després de la càrrega"
 
-#: src/prefs.js:434
+#: src/prefs.js:456
+#, fuzzy
+msgid "Enable CloudApp Upload"
+msgstr "Activar càrrega a Imgur"
+
+#: src/prefs.js:466
+msgid "Email"
+msgstr ""
+
+#: src/prefs.js:499
+msgid "Password"
+msgstr ""
+
+#: src/prefs.js:533
+#, fuzzy
+msgid "Link"
+msgstr "Obrir enllaç"
+
+#: src/prefs.js:539
+#, fuzzy
+msgid "Share Link"
+msgstr "Obrir enllaç"
+
+#: src/prefs.js:540
+#, fuzzy
+msgid "Direct Link"
+msgstr "Obrir enllaç"
+
+#: src/prefs.js:541
+msgid "Download Link"
+msgstr ""
+
+#: src/prefs.js:637
 msgid "Select area"
 msgstr "Seleccionar àrea"
 
-#: src/prefs.js:435
+#: src/prefs.js:638
 msgid "Select window"
 msgstr "Seleccionar finestra"
 
-#: src/prefs.js:436
+#: src/prefs.js:639
 msgid "Select whole desktop"
 msgstr "Seleccionar escriptori sencer"
 
-#: src/prefs.js:463
+#: src/prefs.js:666
 msgid "Keyboard Shortcut"
 msgstr "Drecera de teclat"
 
-#: src/prefs.js:503
+#: src/prefs.js:706
 msgid "Modify"
 msgstr "Modificar"
 
@@ -270,6 +344,8 @@ msgstr "_Cancel·la"
 msgid "_Save"
 msgstr "_Desa"
 
-#: src/selection.js:228
+#: src/selection.js:229
 msgid "selected region was too small - please select a larger area"
-msgstr "la regió seleccionada era massa petita - si us plau, seleccioni un àrea més gran"
+msgstr ""
+"la regió seleccionada era massa petita - si us plau, seleccioni un àrea més "
+"gran"

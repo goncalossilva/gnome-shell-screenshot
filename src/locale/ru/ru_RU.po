@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-23 23:47+0100\n"
-"PO-Revision-Date: 2018-07-14 17:23+0300\n"
+"POT-Creation-Date: 2019-11-04 01:16+0000\n"
+"PO-Revision-Date: 2017-07-31 23:31+0300\n"
 "Last-Translator: Alex Gluck <alexgluck@bk.ru>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.0.2\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
@@ -69,17 +69,17 @@ msgstr "Параметры:"
 
 #: src/indicator.js:102
 msgid "No Capture Delay"
-msgstr "Захват без задержки"
+msgstr ""
 
 #: src/indicator.js:104 src/indicator.js:106
 msgid "Capture Delay"
-msgstr "Задержка захвата"
+msgstr ""
 
 #: src/indicator.js:121
 msgid "Clear"
 msgstr "Очистить"
 
-#: src/indicator.js:122 src/notifications.js:95
+#: src/indicator.js:122 src/notifications.js:109
 msgid "Copy"
 msgstr "Копировать"
 
@@ -91,73 +91,98 @@ msgstr "Сохранить как ..."
 msgid "Imgur"
 msgstr "Imgur"
 
-#: src/indicator.js:140
+#: src/indicator.js:140 src/indicator.js:162
 msgid "Upload"
 msgstr "Загрузить"
 
-#: src/indicator.js:141
+#: src/indicator.js:141 src/indicator.js:163
 msgid "Open Link"
 msgstr "Открыть ссылку"
 
-#: src/indicator.js:142 src/notifications.js:182
+#: src/indicator.js:142 src/indicator.js:164 src/notifications.js:225
+#: src/notifications.js:286
 msgid "Copy Link"
 msgstr "Копировать ссылку"
 
-#: src/indicator.js:143
+#: src/indicator.js:143 src/indicator.js:165
 msgid "Delete"
 msgstr "Удалить"
 
-#: src/indicator.js:297 src/prefs.js:144
+#: src/indicator.js:161
+msgid "CloudApp"
+msgstr ""
+
+#: src/indicator.js:357 src/prefs.js:148
 msgid "Select Area"
 msgstr "Выделить область"
 
-#: src/indicator.js:298 src/prefs.js:145
+#: src/indicator.js:358 src/prefs.js:149
 msgid "Select Window"
 msgstr "Выделить окно"
 
-#: src/indicator.js:299 src/prefs.js:146
+#: src/indicator.js:359 src/prefs.js:150
 msgid "Select Desktop"
 msgstr "Выбрать рабочий стол"
 
-#: src/indicator.js:327
+#: src/indicator.js:387
 msgid "Settings"
 msgstr "Настройки"
 
-#: src/notifications.js:65
+#: src/notifications.js:67
 msgid "New Screenshot"
 msgstr "Новый снимок"
 
-#: src/notifications.js:70
+#: src/notifications.js:72
 msgid "Size:"
 msgstr "Размер:"
 
-#: src/notifications.js:96
+#: src/notifications.js:110
 msgid "Save"
 msgstr "Сохранить"
 
-#: src/notifications.js:100
+#: src/notifications.js:114
 msgid "Uploading To Imgur..."
 msgstr "Загрузить в Imgur..."
 
-#: src/notifications.js:102
+#: src/notifications.js:116
 msgid "Upload To Imgur"
 msgstr "Загрузить в Imgur"
 
-#: src/notifications.js:132
+#: src/notifications.js:122
+msgid "Uploading To CloudApp..."
+msgstr ""
+
+#: src/notifications.js:124
+msgid "Upload To CloudApp"
+msgstr ""
+
+#: src/notifications.js:158
 msgid "Error"
 msgstr "Ошибка"
 
-#: src/notifications.js:144 src/notifications.js:156
+#: src/notifications.js:178 src/notifications.js:183 src/notifications.js:199
 msgid "Imgur Upload"
 msgstr "Загрузка в Imgur"
 
-#: src/notifications.js:162
+#: src/notifications.js:205
 msgid "Imgur Upload Failed"
 msgstr "Загрузка в Imgur провалилась"
 
-#: src/notifications.js:167
+#: src/notifications.js:210
 msgid "Imgur Upload Successful"
 msgstr "Загрузка в Imgur успешна"
+
+#: src/notifications.js:248 src/notifications.js:260
+msgid "CloudApp Upload"
+msgstr ""
+
+#: src/notifications.js:266
+msgid "CloudApp Upload Failed"
+msgstr ""
+
+#: src/notifications.js:271
+msgid "CloudApp Upload Successful"
+msgstr ""
 
 #: src/prefs.js:86
 msgid "Indicator"
@@ -172,94 +197,135 @@ msgid "Imgur Upload (Beta)"
 msgstr "Загрузка в Imgur (ВЕТА)"
 
 #: src/prefs.js:98
+msgid "CloudApp Upload (Alpha)"
+msgstr ""
+
+#: src/prefs.js:102
 msgid "Keybindings"
 msgstr "Горячие клавиши"
 
-#: src/prefs.js:117
+#: src/prefs.js:121
 msgid "Show Indicator"
 msgstr "Показывать иконку"
 
-#: src/prefs.js:126
+#: src/prefs.js:130
 msgid "Show Notification After Capture"
-msgstr "Показывать уведомление после захвата"
+msgstr ""
 
-#: src/prefs.js:138
+#: src/prefs.js:142
 msgid "Primary Button"
 msgstr "Основная кнопка"
 
-#: src/prefs.js:147
+#: src/prefs.js:151
 msgid "Show Menu"
 msgstr "Показать меню"
 
-#: src/prefs.js:168
-msgid "Auto-Copy to Clipboard"
-msgstr "Автоматически копировать в буфер обмена"
-
 #: src/prefs.js:174
 msgid "Nothing"
-msgstr "Ничего"
+msgstr ""
 
 #: src/prefs.js:175
 msgid "Image Data"
 msgstr "Изображение"
 
-#: src/prefs.js:211
-msgid "Auto-Save Screenshot"
-msgstr "Автоматически сохранять скриншот"
+#: src/prefs.js:176
+msgid "Local Path"
+msgstr ""
 
-#: src/prefs.js:222
+#: src/prefs.js:204
+#, fuzzy
+msgid "Copy Button"
+msgstr "Основная кнопка"
+
+#: src/prefs.js:211
+msgid "Auto-Copy to Clipboard"
+msgstr ""
+
+#: src/prefs.js:233
+msgid "Auto-Save Screenshot"
+msgstr "Авто-сохранение скриншота"
+
+#: src/prefs.js:244
 msgid "Save Location"
 msgstr "Сохранить область"
 
-#: src/prefs.js:229
+#: src/prefs.js:251
 msgid "Select"
 msgstr "Выделить"
 
-#: src/prefs.js:270
+#: src/prefs.js:292
 msgid "Default Filename"
 msgstr "Имя файла по умолчанию"
 
-#: src/prefs.js:295
+#: src/prefs.js:317
 msgid "Preview"
 msgstr "Формат"
 
-#: src/prefs.js:353
+#: src/prefs.js:375
 msgid "Enable Imgur Upload"
 msgstr "Включать загрузку в Imgur"
 
-#: src/prefs.js:361
+#: src/prefs.js:383 src/prefs.js:566
 msgid "Show Upload Notification"
-msgstr "Показать уведомление о загрузке"
+msgstr ""
 
-#: src/prefs.js:378
+#: src/prefs.js:400 src/prefs.js:581
 msgid "Auto-Upload After Capture"
-msgstr "Автоматически загружать скриншот после захвата"
+msgstr "Автозагрузка скриншота"
 
-#: src/prefs.js:393
+#: src/prefs.js:415 src/prefs.js:596
 msgid "Auto-Copy Link After Upload"
-msgstr "Автоматически копировать ссылку после загрузки"
+msgstr "Автокопирование ссылки после загрузки"
 
-#: src/prefs.js:408
+#: src/prefs.js:430 src/prefs.js:611
 msgid "Auto-Open Link After Upload"
-msgstr "Автоматически открывать ссылку после загрузки"
+msgstr "Автооткрытие ссылки после загрузки"
 
-#: src/prefs.js:434
+#: src/prefs.js:456
+msgid "Enable CloudApp Upload"
+msgstr ""
+
+#: src/prefs.js:466
+msgid "Email"
+msgstr ""
+
+#: src/prefs.js:499
+msgid "Password"
+msgstr ""
+
+#: src/prefs.js:533
+msgid "Link"
+msgstr ""
+
+#: src/prefs.js:539
+msgid "Share Link"
+msgstr ""
+
+#: src/prefs.js:540
+msgid "Direct Link"
+msgstr ""
+
+#: src/prefs.js:541
+msgid "Download Link"
+msgstr ""
+
+#: src/prefs.js:637
 msgid "Select area"
 msgstr "Выделить область"
 
-#: src/prefs.js:435
+#: src/prefs.js:638
 msgid "Select window"
 msgstr "Выбрать окно"
 
-#: src/prefs.js:436
+#: src/prefs.js:639
 msgid "Select whole desktop"
-msgstr "Выбрать весь рабочий стол"
+msgstr "Захватить текущий рабочий стол"
 
-#: src/prefs.js:463
+#: src/prefs.js:666
 msgid "Keyboard Shortcut"
 msgstr "Горячая клавиша"
 
-#: src/prefs.js:503
+#: src/prefs.js:706
 msgid "Modify"
 msgstr "Изменить"
 
@@ -271,10 +337,9 @@ msgstr "_Отменить"
 msgid "_Save"
 msgstr "_Сохранить"
 
-#: src/selection.js:228
+#: src/selection.js:229
 msgid "selected region was too small - please select a larger area"
-msgstr ""
-"выбранная область слишком маленькая - выберите, пожалуйста, область шире"
+msgstr "выбранная область слишком маленькая - выберите пожалуйста область шире"
 
 #~ msgid "Default Clipboard Content"
 #~ msgstr "Добавлять в буфер обмена"

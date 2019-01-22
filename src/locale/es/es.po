@@ -90,35 +90,40 @@ msgstr "Guardar como..."
 msgid "Imgur"
 msgstr "Imgur"
 
-#: src/indicator.js:140
+#: src/indicator.js:140 src/indicator.js:162
 msgid "Upload"
 msgstr "Subir"
 
-#: src/indicator.js:141
+#: src/indicator.js:141 src/indicator.js:163
 msgid "Open Link"
 msgstr "Abrir enlace"
 
-#: src/indicator.js:142 src/notifications.js:213
+#: src/indicator.js:142 src/indicator.js:164 src/notifications.js:225
+#: src/notifications.js:286
 msgid "Copy Link"
 msgstr "Copiar enlace"
 
-#: src/indicator.js:143
+#: src/indicator.js:143 src/indicator.js:165
 msgid "Delete"
 msgstr "Eliminar"
 
-#: src/indicator.js:297 src/prefs.js:144
+#: src/indicator.js:161
+msgid "CloudApp"
+msgstr ""
+
+#: src/indicator.js:357 src/prefs.js:148
 msgid "Select Area"
 msgstr "Seleccionar área"
 
-#: src/indicator.js:298 src/prefs.js:145
+#: src/indicator.js:358 src/prefs.js:149
 msgid "Select Window"
 msgstr "Seleccionar ventana"
 
-#: src/indicator.js:299 src/prefs.js:146
+#: src/indicator.js:359 src/prefs.js:150
 msgid "Select Desktop"
 msgstr "Seleccionar escritorio"
 
-#: src/indicator.js:327
+#: src/indicator.js:387
 msgid "Settings"
 msgstr "Configuración"
 
@@ -142,20 +147,44 @@ msgstr "Subiendo a Imgur..."
 msgid "Upload To Imgur"
 msgstr "Subir a Imgur"
 
-#: src/notifications.js:146
+#: src/notifications.js:122
+#, fuzzy
+msgid "Uploading To CloudApp..."
+msgstr "Subiendo a Imgur..."
+
+#: src/notifications.js:124
+#, fuzzy
+msgid "Upload To CloudApp"
+msgstr "Subir a Imgur"
+
+#: src/notifications.js:158
 msgid "Error"
 msgstr "Error"
 
-#: src/notifications.js:166 src/notifications.js:171 src/notifications.js:187
+#: src/notifications.js:178 src/notifications.js:183 src/notifications.js:199
 msgid "Imgur Upload"
 msgstr "Subida a Imgur"
 
-#: src/notifications.js:193
+#: src/notifications.js:205
 msgid "Imgur Upload Failed"
 msgstr "Subida a Imgur fallida"
 
-#: src/notifications.js:198
+#: src/notifications.js:210
 msgid "Imgur Upload Successful"
+msgstr "Subida a Imgur completada"
+
+#: src/notifications.js:248 src/notifications.js:260
+msgid "CloudApp Upload"
+msgstr ""
+
+#: src/notifications.js:266
+#, fuzzy
+msgid "CloudApp Upload Failed"
+msgstr "Subida a Imgur fallida"
+
+#: src/notifications.js:271
+#, fuzzy
+msgid "CloudApp Upload Successful"
 msgstr "Subida a Imgur completada"
 
 #: src/prefs.js:86
@@ -171,28 +200,28 @@ msgid "Imgur Upload (Beta)"
 msgstr "Subida a Imgur (Beta)"
 
 #: src/prefs.js:98
+msgid "CloudApp Upload (Alpha)"
+msgstr ""
+
+#: src/prefs.js:102
 msgid "Keybindings"
 msgstr "Atajos"
 
-#: src/prefs.js:117
+#: src/prefs.js:121
 msgid "Show Indicator"
 msgstr "Mostrar indicador"
 
-#: src/prefs.js:126
+#: src/prefs.js:130
 msgid "Show Notification After Capture"
 msgstr "Mostrar notificación tras la captura"
 
-#: src/prefs.js:138
+#: src/prefs.js:142
 msgid "Primary Button"
 msgstr "Botón primario"
 
-#: src/prefs.js:147
+#: src/prefs.js:151
 msgid "Show Menu"
 msgstr "Mostrar menú"
-
-#: src/prefs.js:168
-msgid "Auto-Copy to Clipboard"
-msgstr "Copiar automáticamente al portapapeles"
 
 #: src/prefs.js:174
 msgid "Nothing"
@@ -202,63 +231,108 @@ msgstr "Nada"
 msgid "Image Data"
 msgstr "Datos de la imagen"
 
+#: src/prefs.js:176
+msgid "Local Path"
+msgstr ""
+
+#: src/prefs.js:204
+#, fuzzy
+msgid "Copy Button"
+msgstr "Botón primario"
+
 #: src/prefs.js:211
+msgid "Auto-Copy to Clipboard"
+msgstr "Copiar automáticamente al portapapeles"
+
+#: src/prefs.js:233
 msgid "Auto-Save Screenshot"
 msgstr "Guardar captura automáticamente"
 
-#: src/prefs.js:222
+#: src/prefs.js:244
 msgid "Save Location"
 msgstr "Ubicación de guardado"
 
-#: src/prefs.js:229
+#: src/prefs.js:251
 msgid "Select"
 msgstr "Seleccionar"
 
-#: src/prefs.js:270
+#: src/prefs.js:292
 msgid "Default Filename"
 msgstr "Nombre predeterminado"
 
-#: src/prefs.js:295
+#: src/prefs.js:317
 msgid "Preview"
 msgstr "Previsualizar"
 
-#: src/prefs.js:353
+#: src/prefs.js:375
 msgid "Enable Imgur Upload"
 msgstr "Activar subida a Imgur"
 
-#: src/prefs.js:361
+#: src/prefs.js:383 src/prefs.js:566
 msgid "Show Upload Notification"
 msgstr "Mostrar notificación de subida"
 
-#: src/prefs.js:378
+#: src/prefs.js:400 src/prefs.js:581
 msgid "Auto-Upload After Capture"
 msgstr "Subir automáticamente tras la captura"
 
-#: src/prefs.js:393
+#: src/prefs.js:415 src/prefs.js:596
 msgid "Auto-Copy Link After Upload"
 msgstr "Copiar enlace automáticamente tras la subida"
 
-#: src/prefs.js:408
+#: src/prefs.js:430 src/prefs.js:611
 msgid "Auto-Open Link After Upload"
 msgstr "Abrir enlace automáticamente tras la subida"
 
-#: src/prefs.js:434
+#: src/prefs.js:456
+#, fuzzy
+msgid "Enable CloudApp Upload"
+msgstr "Activar subida a Imgur"
+
+#: src/prefs.js:466
+msgid "Email"
+msgstr ""
+
+#: src/prefs.js:499
+msgid "Password"
+msgstr ""
+
+#: src/prefs.js:533
+#, fuzzy
+msgid "Link"
+msgstr "Abrir enlace"
+
+#: src/prefs.js:539
+#, fuzzy
+msgid "Share Link"
+msgstr "Abrir enlace"
+
+#: src/prefs.js:540
+#, fuzzy
+msgid "Direct Link"
+msgstr "Abrir enlace"
+
+#: src/prefs.js:541
+msgid "Download Link"
+msgstr ""
+
+#: src/prefs.js:637
 msgid "Select area"
 msgstr "Seleccionar área"
 
-#: src/prefs.js:435
+#: src/prefs.js:638
 msgid "Select window"
 msgstr "Seleccionar ventana"
 
-#: src/prefs.js:436
+#: src/prefs.js:639
 msgid "Select whole desktop"
 msgstr "Seleccionar escritorio completo"
 
-#: src/prefs.js:463
+#: src/prefs.js:666
 msgid "Keyboard Shortcut"
 msgstr "Atajo de teclado"
 
-#: src/prefs.js:503
+#: src/prefs.js:706
 msgid "Modify"
 msgstr "Modificar"
 

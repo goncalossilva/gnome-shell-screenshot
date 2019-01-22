@@ -113,9 +113,18 @@ const Notification = registerClassCompat(class Notification extends MessageTray.
       if (settings.get_boolean(Config.KeyImgurAutoUpload)) {
         b.addAction(_("Uploading To Imgur..."), () => { /* noop */ });
       } else {
-        b.addAction(_("Upload To Imgur"), this._onUpload.bind(this));
+        b.addAction(_("Upload To Imgur"), this._onUploadImgur.bind(this));
       }
     }
+
+    if (settings.get_boolean(Config.KeyEnableUploadCloudApp)) {
+      if (settings.get_boolean(Config.KeyCloudAppAutoUpload)) {
+        b.addAction(_("Uploading To CloudApp..."), () => { /* noop */ });
+      } else {
+        b.addAction(_("Upload To CloudApp"), this._onUploadCloudApp.bind(this));
+      }
+    }
+
     return b;
   }
 
@@ -131,11 +140,14 @@ const Notification = registerClassCompat(class Notification extends MessageTray.
     this._screenshot.launchSave();
   }
 
-  _onUpload() {
+  _onUploadImgur() {
     this._screenshot.imgurStartUpload();
   }
-});
 
+  _onUploadCloudApp() {
+    this._screenshot.cloudAppStartUpload();
+  }
+});
 
 var ErrorNotification = registerClassCompat(
   class ErrorNotification extends MessageTray.Notification {
@@ -231,6 +243,78 @@ var ImgurNotification = registerClassCompat(
 });
 
 
+var CloudAppNotification = registerClassCompat(
+  class CloudAppNotification extends MessageTray.Notification {
+
+  constructor(source, screenshot) {
+    super(source, _("CloudApp Upload"));
+    this.initCompat(...arguments);
+  }
+
+  _init(source, screenshot) {
+    super._init(source, _("CloudApp Upload"));
+    this.initCompat(...arguments);
+  }
+
+  initCompat(source, screenshot) {
+    this.setForFeedback(true);
+    this.setResident(true);
+
+    this.connect("activated", this._onActivated.bind(this));
+
+    this._screenshot = screenshot;
+
+    this._upload = screenshot.cloudAppUpload;
+
+    this._upload.connect("progress", (obj, bytes, total) => {
+      this.update(
+          _("CloudApp Upload"),
+          "" + Math.floor(100 * (bytes / total)) + "%"
+      );
+    });
+
+    this._upload.connect("error", (obj, msg) => {
+      this.update(_("CloudApp Upload Failed"), msg);
+    });
+
+    this._upload.connect("done", () => {
+      this.update(
+        _("CloudApp Upload Successful"), this._upload.responseData.url
+      );
+      this._updateCopyButton();
+    });
+  }
+
+  _updateCopyButton() {
+    if (!this._copyButton) {
+      return;
+    }
+    this._copyButton.visible = this._screenshot.isCloudAppUploadComplete();
+  }
+
+  createBanner() {
+    const b = super.createBanner();
+    this._copyButton = b.addAction(_("Copy Link"), this._onCopy.bind(this));
+    this._updateCopyButton();
+    return b;
+  }
+
+  _onActivated() {
+    if (this._screenshot.isCloudAppUploadComplete()) {
+      this._screenshot.cloudAppOpenURL();
+    } else {
+      this._upload.connect("done", () => {
+        this._screenshot.cloudAppOpenURL();
+      });
+    }
+  }
+
+  _onCopy() {
+    this._screenshot.cloudAppCopyURL();
+  }
+});
+
+
 const notifyScreenshot = (screenshot) => {
   const source = getSource();
   const notification = new Notification(source, screenshot);
@@ -249,8 +333,15 @@ const notifyImgurUpload = (screenshot) => {
   showNotificationCompat(source, notification);
 }
 
+const notifyCloudAppUpload = (screenshot) => {
+  const source = getSource();
+  const notification = new CloudAppNotification(source, screenshot);
+  showNotificationCompat(source, notification);
+}
+
 var exports = {
   notifyError,
   notifyScreenshot,
-  notifyImgurUpload
+  notifyImgurUpload,
+  notifyCloudAppUpload
 };
